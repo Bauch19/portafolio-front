@@ -21,11 +21,11 @@ function App() {
         </nav>
       </header>
       <div className='h-[100vh]'>
-        <div className='relative w-full h-[655px] flex justify-center items-center px-[2em]'>
-          <div className='bg-no-repeat w-full h-full flex flex-col justify-center items-center px-[2em] rounded-[2em]' style={{ backgroundImage: `url(${banner})`, backgroundSize: 'contain', backgroundPosition: 'center' }}>
-            <h1 className='relative flex flex-col justify-center items-center uppercase font-[900] text-[7rem]'>
+        <div className='relative w-full h-[655px] flex justify-center lg:items-center px-[2em]'>
+          <div className='bg-no-repeat w-full h-full flex flex-col lg:justify-center lg:items-center px-[2em] rounded-[2em] object-cover lg:object-contain max-[740px]:pt-[50px]' style={{ backgroundImage: `url(${banner})`, backgroundPosition: 'center' }}>
+            <h1 className='relative flex flex-col justify-center items-center uppercase font-[900] lg:text-[7rem]'>
               Portafolio
-              <span className='font-[Blacksword] capitalize text-[#DBAB00] text-[4rem] absolute right-0 top-[5.5rem]'>
+              <span className='font-[Blacksword] capitalize text-[#DBAB00] text-[3rem] lg:text-[4rem] absolute lg:right-0 top-9 lg:top-[5.5rem]'>
                 Bauch Ventura
               </span>
             </h1>
@@ -39,15 +39,15 @@ function App() {
         </div>
       </div>
       <div className='relative w-full h-[100vh]' id='sobre-mi'>
-        <h2 className='relative flex flex-col justify-center items-center uppercase font-[900] text-[7rem]'>
+        <h2 className='relative flex flex-col justify-center items-center uppercase font-[900] text-[3rem] lg:text-[7rem]'>
           Sobre mí
-          <span className='font-[Blacksword] capitalize text-[#DBAB00] text-[4rem] absolute top-[2.5rem]'>
+          <span className='font-[Blacksword] capitalize text-[#DBAB00] text-[2rem] lg:text-[4rem] absolute lg:top-[2.5rem]'>
             Sobre mí
           </span>
         </h2>
         <div className='w-full flex justify-center'>
-          <p className='text-gray-400 max-w-[950px] text-[20px] font-normal'>
-            Apasionado <b>programador Front-End</b> con experiencia en <b>crear interfaces atractivasy funcionales </b>
+          <p className='text-gray-400 max-w-[950px] mx-[2rem] text-[20px] font-normal'>
+            Apasionado <b>programador Front-End</b> con experiencia en <b>crear interfaces atractivas y funcionales </b>
             usando <b>HTML</b>, <b>CSS</b> y <b>React.js</b>. También tengo conocimientos en <b>Back-End</b> con <b>Laravel</b> y <b>Genexus</b>, 
             lo que me permite abordar <b>proyectos web de manera integral</b>. Mi <b>atención a los detalles</b> y 
             <b> habilidad en caligrafía</b> se reflejan en mi <b>código limpio y legible</b>.
