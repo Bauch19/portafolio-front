@@ -1,11 +1,20 @@
 import { useState } from 'react'
 import logoB from './assets/logo-b.svg'
 import banner from './assets/banner-portafolio.png'
+import codificacion from './assets/codificacion.png'
+import editing from './assets/editing.png'
+import design from './assets/design.png'
 import Slider from './components/sliders'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const imgSobre = [
+    {img: codificacion, titulo: 'Codificacion',},
+    {img: editing, titulo: 'Edicion',},
+    {img: design, titulo: 'Diseno',},
+  ]
 
   return (
     <>
@@ -39,7 +48,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='relative w-full h-[100vh]' id='sobre-mi'>
+      <div className='relative w-full h-auto' id='sobre-mi'>
         <h2 className='relative flex flex-col justify-center items-center uppercase font-[900] text-[3rem] lg:text-[7rem]'>
           Sobre mí
           <span className='font-[Blacksword] capitalize text-[#DBAB00] text-[2rem] lg:text-[4rem] absolute lg:top-[2.5rem]'>
@@ -54,8 +63,11 @@ function App() {
             <b> habilidad en caligrafía</b> se reflejan en mi <b>código limpio y legible</b>.
           </p>
         </div>
-        <div className='w-full h-[450px] px-[5rem] mt-5'>
-          <Slider />
+        <div className='w-full h-auto mt-1 max-[740px]:mt-5'>
+          <Slider data={imgSobre}/>
+        </div>
+        <div className='relative w-full h-[100vh]'>
+
         </div>
       </div>
     </>
